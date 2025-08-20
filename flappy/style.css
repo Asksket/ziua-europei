@@ -1,0 +1,54 @@
+:root {
+  --bg-top: #6bd1ff;
+  --bg-bottom: #c3f0ff;
+  --pipe: #2ecc71;
+  --pipe-dark: #27ae60;
+  --ground: #8b5a2b;
+  --text: #0f2b46;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  height: 100%;
+  background: linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+  font-family: 'Nunito', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  color: var(--text);
+}
+
+#container {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding: 16px;
+}
+
+#game {
+  max-width: min(100%, 640px);
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 50px rgba(15, 43, 70, 0.25);
+  background: transparent;
+}
+
+#hud {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  user-select: none;
+}
+
+.title {
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  font-size: 28px;
+}
+
+.help {
+  opacity: 0.8;
+  font-weight: 700;
+  font-size: 14px;
+}
+
